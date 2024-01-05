@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Render</title>
+</head>
+<body>
+	<form class="form">
+		<select class="film-select" id="select">
+		</select>
+
+		<select class="select__sotr">
+			<option value="a_z">A-Z</option>
+			<option value="z_a">Z-A</option>
+			<option value="new_old">NEW-OLD</option>
+			<option value="old_new">OLD-NEW</option>
+		</select>
+
+		<input class="film-search-input" type="text" placeholder="search.." />
+
+		<button type="submit">Filter</button>
+	</form>
+
+	<ul class="films__list"></ul>
+
+	<template id="film-template">
+		<li class="film">
+			<h3 class="film__title">Shazam</h3>
+			<img class="film__image" src="https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg"
+				alt="Shazam's poster" width="200" height="300" />
+
+			<p class="film__overview">Lorem ipsum dolor sit amet.</p>
+
+			<time class="film__time">22.02.10</time>
+
+			<ul class="film__genres"></ul>
+		</li>
+	</template>
+
+	<template id="film-genre-template">
+		<li class="film-genre">Action</li>
+	</template>
+
+	<script src="js/films.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
